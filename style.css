@@ -1,0 +1,66 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 80vw;
+    height: 500px;
+    background-color: beige;
+    margin: 0 auto;
+    /* Kích hoạt flex box */
+    display: flex;
+    /* Chỉnh các flex item theo chiều dọc */
+    flex-direction: column;
+    /* Chỉnh các flex item theo chiều ngang */
+    flex-direction: row;
+    /* xuống hàng khi các flex item vượt quá kích thước của container */
+    flex-wrap: wrap;
+    /* Đưa các item về cạnh phải */
+    justify-content: flex-end;
+    /* Đưa các item về cạnh phải */
+    justify-content: flex-start;
+    /* Căn giữa */
+    justify-content: center;
+    /* Cách đều các phần tử ( không chừa khoảng cách với cạnh trái phải) */
+    justify-content: space-between;
+    /*  Cách đều các phần tử và cạnh */
+    justify-content: space-evenly;
+    /* Có mỗi phần tử một khoảng cách trái phải đều nhau */
+    justify-content: space-around;
+    /* Đưa các phần tử xuống bottom */
+    align-items: flex-end;
+    /* Đưa các phần tử lên top */
+    align-items: flex-start;
+    /* Đưa các phần tử căn giữa */
+    align-items: center;
+    /* Kéo giãn các phần tử */
+    align-items: stretch;
+    /* Tạo khoảng cách giữa các phần tử */
+    gap: 10px 15px;
+}
+.box{
+    width: 100px;
+    height: auto;
+}
+.box1{
+    background-color: red;
+    order: 1;
+}
+.box2{
+    background-color: green;
+    order: 3;
+}
+.box3{
+    background-color: blue;
+    order: 4;
+}
+.box4{
+    background-color: yellow;
+    order: 2;
+}
+.box5{
+    background-color: orange;
+    order: 5;
+}
